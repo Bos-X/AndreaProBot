@@ -17,7 +17,7 @@ Modular Telegram bot for managing your groups with a extras features with Hunter
 </p>
 
 ### Click Below Image to Deploy
-[![Deploy](https://telegra.ph/file/61f264cdcc1594bb7079b.jpg)](https://heroku.com/deploy?template=https://github.com/Bos-X/AndreaProBot)
+[![Deploy](https://telegra.ph/file/61f264cdcc1594bb7079b.jpg)](https://heroku.com/deploy?template=https://github.com/Bos-X/AndreaProBot.git)
 
 ### Configuration
 
