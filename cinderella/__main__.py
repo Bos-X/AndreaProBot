@@ -38,10 +38,10 @@ Hey there! My name is *{}*.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
- 💠 - /start: start the bot
- 💠 - /help: PM's you this message.
- 💠 - /help <module name>: PM's you info about that module.
- 💠 - /settings:
+ 🐍 - /start: start the bot
+ 🐍 - /help: PM's you this message.
+ 🐍 - /help <module name>: PM's you info about that module.
+ 🐍 - /settings:
    🔹 - in PM: will send you your settings for all supported modules.
    🔹 - in a group: will redirect you to pm, with all that chat's settings.
 {}
@@ -58,7 +58,7 @@ def vercheck() -> str:
 
 SOURCE_STRING = """
 
-⚡You Can Contact me [Here](https://t.me/DON_OF_TELEGRAM)
+⚡You Can Contact me [Here](https://t.me/aestheticboyy2)
 """
 
 
@@ -77,7 +77,7 @@ GDPR = []
 
 START_IMG = os.environ.get('START_IMG', None)
 if START_IMG is None:
-    img = "https://telegra.ph/file/3055edd96c58853e03f15.jpg"
+    img = "https://telegra.ph/file/61f264cdcc1594bb7079b.jpg"
 else:
   img = START_IMG    
     
@@ -178,7 +178,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="Help❓ ",callback_data="help_back"),InlineKeyboardButton(text="Creator 🔱",url="https://t.me/TAMILTALKING")]]
+    keyboard = [[InlineKeyboardButton(text="Help❓ ",callback_data="help_back"),InlineKeyboardButton(text="Creator 🔱",url="https://t.me/aestheticboyy2")]]
     keyboard += [[InlineKeyboardButton(text="Connect Group 🔄", callback_data="main_connect"),InlineKeyboardButton(text="Add Me 🔆",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
@@ -280,7 +280,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands💃.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help❓",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="🚸 Contact Creator 🚸",url="https://t.me/TAMILTALKING")]]))
+                                                [InlineKeyboardButton(text="🚸 Contact Creator 🚸",url="https://t.me/aestheticboyy2")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
